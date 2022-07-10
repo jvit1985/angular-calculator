@@ -1,5 +1,5 @@
 .calculator {
-
+    background-color: lightgrey;
     border: 5px solid black;
     border-radius: 10px;
     position: absolute;
@@ -23,7 +23,6 @@
 
 button {
     height: 60px;
-    background-color: white;
     border-radius: 5px;
     border: 1px solid black;
     background-color: transparent;
@@ -36,7 +35,12 @@ button:hover {
 }
 
 .operation {
+    background-color: white;
     color: red;
+}
+
+.number, .decimal {
+    background-color: white;
 }
 
 .all-clear, .delete {
