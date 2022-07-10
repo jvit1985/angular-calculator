@@ -1,4 +1,5 @@
 .calculator {
+
     border: 5px solid black;
     border-radius: 10px;
     position: absolute;
@@ -31,29 +32,28 @@ button {
 }
 
 button:hover {
-    background-color: #eaeaea;
+    background-color: lightgrey;
 }
 
 .operation {
-    color: royalblue;
+    color: red;
 }
 
 .all-clear, .delete {
     background-color: red;
-    border-color: #630205;
+    border-color: rgb(128, 3, 3);
     color: white;
 }
 
 .equal-sign {
     background-color: royalblue;
-    border-color: rgb(21, 45, 117);
+    border-color: rgb(42, 73, 167);
     color: white;
     height: 74%;
     grid-area: 2/4/6;
 }
 
 .delete {
-    background-color: red;
     grid-area: 5/4;
 }
 
