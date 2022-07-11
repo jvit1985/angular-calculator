@@ -21,6 +21,10 @@
     padding-left: 10px;
 }
 
+#result {
+    border-top: 3px solid black;
+}
+
 button {
     height: 60px;
     border-radius: 5px;

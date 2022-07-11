@@ -1,28 +1,29 @@
 <div class="calculator">
-    <input type="text" class="screen" value="0" />
+    <div type="text" class="screen" id="input">{{input}}</div>
+    <div type="text" class="screen" id="result">{{result}}</div>
     <div class="calculator-keys">
-        <button type="button" class="operation" value="+">+</button>
-        <button type="button" class="operation" value="-">-</button>
-        <button type="button" class="operation" value="*">&times;</button>
-        <button type="button" class="operation" value="/">&divide;</button>
+        <button type="button" (click)="getOperation('+')" class="operation" value="+">+</button>
+        <button type="button" (click)="getOperation('-')" class="operation" value="-">-</button>
+        <button type="button" (click)="getOperation('*')" class="operation" value="*">&times;</button>
+        <button type="button" (click)="getOperation('/')" class="operation" value="/">&divide;</button>
 
-        <button type="button" class="number" value="7">7</button>
-        <button type="button" class="number" value="8">8</button>
-        <button type="button" class="number" value="9">9</button>
+        <button type="button" (click)="getNumber('7')" class="number" value="7">7</button>
+        <button type="button" (click)="getNumber('8')" class="number" value="8">8</button>
+        <button type="button" (click)="getNumber('9')" class="number" value="9">9</button>
 
-        <button type="button" class="number" value="4">4</button>
-        <button type="button" class="number" value="5">5</button>
-        <button type="button" class="number" value="6">6</button>
+        <button type="button" (click)="getNumber('4')" class="number" value="4">4</button>
+        <button type="button" (click)="getNumber('5')" class="number" value="5">5</button>
+        <button type="button" (click)="getNumber('6')" class="number" value="6">6</button>
 
-        <button type="button" class="number" value="1">1</button>
-        <button type="button" class="number" value="2">2</button>
-        <button type="button" class="number" value="3">3</button>
+        <button type="button" (click)="getNumber('1')" class="number" value="1">1</button>
+        <button type="button" (click)="getNumber('2')" class="number" value="2">2</button>
+        <button type="button" (click)="getNumber('3')" class="number" value="3">3</button>
 
-        <button type="button" class="number" value="0">0</button>
-        <button type="button" class="decimal" value=".">.</button>
-        <button type="button" class="all-clear" value="all-clear">AC</button>
-        <button type="button" class="delete" value="delete">DEL</button>
+        <button type="button" (click)="getNumber('0')" class="number" value="0">0</button>
+        <button type="button" (click)="getNumber('.')" class="decimal" value=".">.</button>
+        <button type="button" (click)="allClear()" class="all-clear" value="all-clear">AC</button>
+        <button type="button" (click)="clear()" class="delete" value="delete">DEL</button>
 
-        <button type="button" class="equal-sign" value="=">=</button>
+        <button type="button" (click)="getAnswer()" class="equal-sign" value="=">=</button>
     </div>
 </div>
