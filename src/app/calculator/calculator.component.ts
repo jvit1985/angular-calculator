@@ -86,6 +86,7 @@ export class CalculatorComponent implements OnInit{
     }
 
     this.result = eval(formula);
+
   }
 
   getAnswer() {
